@@ -8,8 +8,6 @@ export const useCoffee = () => useContext(CoffeeContext)
 export default function CoffeeProvider(props) {
   const [coffeeBean, setCoffeeBean] = useState(coffeeBeans[0]);
 
-
-
   const setCoffeeBeanId = (coffeeBeanId) => {
     const bean = coffeeBeans.find(bean => {
       return Number(bean.id) === Number(coffeeBeanId)
